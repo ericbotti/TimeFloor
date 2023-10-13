@@ -1,0 +1,71 @@
+/*
+* { box-sizing: border-box; }
+
+body {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: lightgrey;
+}
+*/
+#box {
+    /*
+  height: 128px;
+  width: 128px;*/
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+#box > svg {
+  height: 24px;
+  width: 24px;
+  color: red;
+/*   transform: scale(5); */
+}
+
+#box > svg path#on-air-out {
+  animation: on-air-out 2s infinite;
+}
+
+#box > svg path#on-air-in {
+  animation: on-air-in 2s infinite;
+}
+
+#box > svg ellipse {
+  transform-origin: 50% 50%;
+  animation: on-air-circle 2s infinite;
+}
+
+@keyframes on-air-circle {
+  0% {
+    opacity: .1;
+    transform: scale(1);
+  }
+  25%  { opacity: 1;
+  transform: scale(2.4);}
+  50%  { opacity: 1;}
+  75%  { opacity: 1;
+  transform: scale(1)}
+  100% { opacity: .3; }
+}
+
+@keyframes on-air-in {
+  0%   { opacity: .3; }
+  25%  { opacity: .3; }
+  50%  { opacity: 1; }
+  75%  { opacity: 1; }
+  100% { opacity: .3; }
+}
+
+@keyframes on-air-out {
+  0%   { opacity: .3; }
+  50%  { opacity: .3; }
+  75%  { opacity: 1; }
+  100% { opacity: .3; }
+}

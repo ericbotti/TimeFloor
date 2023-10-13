@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>TimeFloor</title>
+    <meta name="author" content="Eric Bottinelli">
+    <meta name="description" content="Buy your time with TimeFloor">
+    <meta name="keywords" content="Time, TimeFloor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/on_air.css" media="screen">
+    
+    <script src="js/clock_1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/clock_2.js"></script>
+    <link rel="stylesheet" type="text/less" href="css/clock_1.less" media="screen">
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container_1">
+            <div class="header_left">
+                <a href="index.html" class="logo"><img src="images/TimeFloor_logo.png"></a>
+            </div>
+            <div class="header_right">
+                
+                <nav class="main_nav">
+                    <ul id="MenuItems">
+                        <li id="red"><a href="html/on_air.html">
+                            <div id="box">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+                                <g fill="#FFFFFF" fill-rule="evenodd">
+                                  <ellipse cx="12" cy="8.705" rx="3" ry="3" style="fill:red"/>
+                                  <path style="fill:red" id="on-air-out" d="M3.51471863.219669914C-1.17157288 4.90596141-1.17157288 12.5039412 3.51471863 17.1902327 3.80761184 17.4831259 4.28248558 17.4831259 4.5753788 17.1902327 4.86827202 16.8973394 4.86827202 16.4224657 4.5753788 16.1295725.474873734 12.0290674.474873734 5.38083515 4.5753788 1.28033009 4.86827202.987436867 4.86827202.512563133 4.5753788.219669914 4.28248558-.0732233047 3.80761184-.0732233047 3.51471863.219669914zM20.4852814 17.1902327C25.1715729 12.5039412 25.1715729 4.90596141 20.4852814.219669914 20.1923882-.0732233047 19.7175144-.0732233047 19.4246212.219669914 19.131728.512563133 19.131728.987436867 19.4246212 1.28033009 23.5251263 5.38083515 23.5251263 12.0290674 19.4246212 16.1295725 19.131728 16.4224657 19.131728 16.8973394 19.4246212 17.1902327 19.7175144 17.4831259 20.1923882 17.4831259 20.4852814 17.1902327z"/>
+                                  <path style="fill:red" id="on-air-in" d="M17.3033009 14.0082521C18.7217837 12.5897693 19.4928584 10.6983839 19.4999509 8.73215792 19.507111 6.74721082 18.7352286 4.8335782 17.3033009 3.40165043 17.0104076 3.10875721 16.5355339 3.10875721 16.2426407 3.40165043 15.9497475 3.69454365 15.9497475 4.16941738 16.2426407 4.4623106 17.3890249 5.6086948 18.0056933 7.13752465 17.9999607 8.72674718 17.9942823 10.30094 17.3782748 11.8119579 16.2426407 12.947592 15.9497475 13.2404852 15.9497475 13.7153589 16.2426407 14.0082521 16.5355339 14.3011454 17.0104076 14.3011454 17.3033009 14.0082521zM6.69669914 3.40165043C3.76776695 6.33058262 3.76776695 11.07932 6.69669914 14.0082521 6.98959236 14.3011454 7.46446609 14.3011454 7.75735931 14.0082521 8.05025253 13.7153589 8.05025253 13.2404852 7.75735931 12.947592 5.41421356 10.6044462 5.41421356 6.80545635 7.75735931 4.4623106 8.05025253 4.16941738 8.05025253 3.69454365 7.75735931 3.40165043 7.46446609 3.10875721 6.98959236 3.10875721 6.69669914 3.40165043z"/>
+                                </g>
+                              </svg>
+                              
+                            </div>
+                            On Air</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="html/buy_your_time.html">Buy Time</a></li>
+                        <li><a href="html/timeline.html">Timeline</a></li>
+                        <li><a href="html/contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_right_right">
+                <ul>
+                    <li class="nr_li">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </li>
+                    <li class="nr_li li_main" onclick="menuToggle2()">
+                        <img src="images/io_e_jack_forte.jpg" alt="profile_image">
+                    <div class="menu_profile">
+                        <h3>Eric Bottinelli</h3>
+                        <ul>
+                            <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">My Profile</a></li>
+                            <li><i class="fa fa-pencil-square-o" aria-hidden="true"></i><a href="#">Edit Profile</a></li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i><a href="#">Settings</a></li>
+                            <li><i class="fa fa-info-circle" aria-hidden="true"></i><a href="#">Help</a></li>
+                            <li><i class="fa fa-sign-out" aria-hidden="true"></i><a href="html/sign_in_sign_up.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li class="nr_li">
+                        <label for ="navTrigger" class="nav_icon icon_position"><i class="fa fa-bars" onclick="menutoggle()"></i></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!---- Js for Toggle Menu---->
+
+    <!-- Script for side-menu-->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!-- Script for profile menu -->
+    <script>
+        function menuToggle2(){
+            const toggleMenu2 = document.querySelector('.menu_profile');
+            toggleMenu2.classList.toggle('active');
+        }
+    </script>
+
+<div class="container_9">
+    <div class="content">
+        <h1>Buy Your Time</h1>
+    </div>
+    <div class="clock">
+        <div class="hour">
+            <div class="hr" id="hr"></div>
+        </div>
+        <div class="min">
+            <div class="mn" id="mn"></div>
+        </div>
+        <div class="sec">
+            <div class="sc" id="sc"></div>
+        </div>
+    </div>
+    
+    <!-- https://codepen.io/gnsp/pen/YzKraoa -->
+    <!--
+    <div id="root"></div>
+    -->
+    <!-- https://codepen.io/Emil25/pen/KwRyNJ -->
+    <!--
+    <div class='container1'></div>
+    <div class='container2'></div>
+    <div class='container3'></div>
+    <div class="time"></div>
+    -->
+</div>
+    <script>
+        const deg = 6; //360deg / 60(min||sec) => 6
+        const hr = document.querySelector("#hr");
+        const mn = document.querySelector("#mn");
+        const sc = document.querySelector("#sc");
+
+        setInterval(() => {
+            let day =  new Date();
+            let hh =  day.getHours() * 30; //360deg / 12 hour => 30
+            let mm = day.getMinutes() * deg;
+            let ss = day.getSeconds() * deg;
+
+            hr.style.transform = `rotateZ(${hh + mm / 12}deg)`;
+            mn.style.transform = `rotateZ(${mm}deg)`;
+            sc.style.transform = `rotateZ(${ss}deg)`;
+
+        });
+        // coding with nick
+
+    </script>
+
+
+
+
+
+
+    <div class="section">
+        <div class="container_6">
+            <div class="content-section">
+                <div class="title">
+                    <h1>Philosophy</h1>
+                </div>
+                <div class="content_1">
+                    <p>In a fast world where everyone is running, we want to pause for a moment and take advantage of the time we've got. We want to seize the day, the hour, the minute, and not only in the present, but for every future moment that will arrive in the future, either near or far away. Dealing with the flow of time has always been one of the biggest struggles of humanity, and materializing a way to buy a slice of it is a step closer to the solution of our big existential problem.</p>
+                    <div class="button_1">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Immagine
+            <div class="image-section">
+                <img src="images/pic_1.jpg">
+            </div>
+            -->
+            <div class="banner_video">
+                <video autoplay muted loop>
+                    <source src="videos/video_1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="container_6">
+            <div class="content-section_2">
+                <div class="title">
+                    <h1>Vision</h1>
+                </div>
+                <div class="content_1">
+                    <p>In a world where the web isn't progressing anymore, we want to build something for the next generations; a new idea that can give back to people the freedom of owning something completely, something that has never been possible to be owned before: time. Through that, we want everyone to be able to express himself the best way possible and leave a message to the big audience watching it, being it in few weeks time o in the next millennium. </p>
+                    <div class="button_1">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner_video_2">
+                <video autoplay muted loop>
+                    <source src="videos/video_3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="container_6">
+            <div class="content-section">
+                <div class="title">
+                    <h1>Purpose</h1>
+                </div>
+                <div class="content_1">
+                    <p>In a static social media world where Influencers and Big Corporations are enormously big, and their content is very repetitive and not anymore viewed based on the quality of it, shadowing the value of the voices of small accounts that have just couple of hundred of followers, we created a decentralized channel where everyone could seize his minute and will be able to do whatever he wants with it. Everyone has the possibility to have space and there won't be big differences anymore in terms of audience reaching.</p>
+                    <div class="button_1">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner_video">
+                <video autoplay muted loop>
+                    <source src="videos/video_2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>Who We Are</h2>
+                <p>We are a team of five young, friendly and semi-skilled human beings, who want to give people all over the world the possibility of buying what money couldn't buy before: time. In doing so, we aim to lead the world one step closer to a solution of the historical existential question "How do we seize a moment?".</p>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/Polytrick-100941532124842"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/polytrick.ti/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/72123255/admin/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLinks">
+                <h2>Fast Links</h2>
+                <ul>
+                    <li><a href="#">On Air</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Buy Time</a></li>
+                    <li><a href="#">Timeline</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <div><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <p>8051 Zurich</p>
+                    </li>
+                    <li>
+                        <div><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                        <p><a href="mailto:">timefloor@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="sec partners">
+                <h2>Corporate Responsibility</h2>
+                <p>We are proud to say that our services are 100% eco-friendly. We believe that having a zero-impact carbon footprint in 2021 is a must for every startup that wants to achieve growth and solidity.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrightText">
+        <p>Copyright © TimeFloor. All rights reserved</p>
+    </div>
+
+
+</body>
+</html>
