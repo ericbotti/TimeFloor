@@ -1,5 +1,7 @@
 # TimeFloor
 
-Timefloor is a community created around the idea of decentralizing the concept of time. The aim is to give tangible value to time through different blockchain-based projects.
+Timefloor is a community focused on changing how we think about time, making it less centralized. Our mission is to make time more valuable through creative blockchain projects.
 
-As Chief Technology Officer, my role was to develop TimeFloor's digital ecosystem, which includes several projects ranging from website development to Non-Fungible Tokens (NFTs) creation.
+As the Technical Lead, my main job was to lead the development of TimeFloor's digital world. This included various projects, from building websites to creating Non-Fungible Tokens (NFTs).
+
+I joined this exciting project of friends of mine in May 2021, but had to step away in June 2022 due to time constraints.
